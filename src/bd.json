@@ -1,0 +1,22 @@
+{
+    "usuarios":[
+        {
+            "nome": "usuario1",
+            "email": "usuario1@megaplate.com",
+            "senha": "usuario1@123",            
+            "id": 1
+        },
+        {
+            "nome": "usuario2",
+            "email": "usuario2@megaplate.com",
+            "senha": "usuario2@123",            
+            "id": 2
+        },
+        {
+            "nome": "usuario3",
+            "email": "usuario3@megaplate.com",
+            "senha": "usuario3@123",            
+            "id": 3
+        }
+    ]
+}
