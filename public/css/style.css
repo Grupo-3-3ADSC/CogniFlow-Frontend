@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #05314C;
+    --secondary-color: #4586AB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url('../images/Fundo MegaPlate.png');
+     background-size:cover ;
+    background-repeat: no-repeat; 
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-mega{
+    display: flex;
+    height: 524px;
+    width: 216px;
+    background-color: var(--secondary-color);
+    position: absolute; 
+    top:25vh;
+    left: calc(49.75% - 436px / 2 - 216px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .box-campos{
+    display: flex;
+    /* margin-top: 100px; */
+    position: absolute; /* usando para centralizar verticalmente sem usar margin-top, se der erro use margin-top*/
+    top:25vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 436px;
+    height: 524px;
+    gap: 16px;
+    border-radius: 0px 20px 20px 0px;
+
+    input{
+        border: none;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 48px;
+        color:white;    
+    }
+
+    .h1-redefinicao{
+        font-size: 36px;
+        text-align: center;
+        margin-top: -30px ;
+        margin-bottom: 30px;
+    }
+
+    button{
+        background-color: var(--secondary-color);
+        border-radius: 80px;
+        width: 272px;
+        height: 44px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+    }
+
+    #input-email{
+        border-radius: 14px;
+        width: 274px;
+        height: 48px;
+    }
+
+    #input-senha{
+        border-radius: 14px;
+        width: 274px;
+        height: 48px;
+    }
+
+  }
