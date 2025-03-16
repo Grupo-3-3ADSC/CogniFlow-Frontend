@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-const msg = document.getElementById('span_sucesso');
-const confirmar = document.getElementById('botao_confirmar');
+const msg = document.getElementById('span-sucesso');
+const confirmar = document.getElementById('botao-confirmar');
+const img = document.getElementById('imagem-carregamento');
 
 const login = async () => {
 
-    const email = document.getElementById('input_email').value;
-    const senha = document.getElementById('input_senha').value;       
+    const email = document.getElementById('input-email').value;
+    const senha = document.getElementById('input-senha').value;       
     const resposta = await fetch('http://localhost:3000/usuarios');
     const usuarios = await resposta.json(); 
 
@@ -23,7 +24,14 @@ const login = async () => {
 
     if(usuarioEncontrado){
         msg.innerText = `Bem-vindo ${nomeUsuario}!`
-        return;       
+        msg.style.display = 'block';
+        img.style.display = 'inline';
+
+        setTimeout(() => {
+            window.location.href = "../public/dashboard.html";
+        }, 2000);
+
+        return;
     }
 
     msg.innerText = `E-mail ou senha incorretos, favor tente novamente.`

@@ -80,6 +80,12 @@ body {
         border: none;
     }
 
+    #imagem-carregamento{
+      display:none;
+      width: 32px;
+      height: 32px;
+    }
+
     #input-email{
         border-radius: 14px;
         width: 274px;
