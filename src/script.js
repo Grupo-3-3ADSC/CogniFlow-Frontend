@@ -3,6 +3,19 @@ const msg = document.getElementById('span-sucesso');
 const confirmar = document.getElementById('botao-confirmar');
 const img = document.getElementById('imagem-carregamento');
 
+let btn = document.querySelector('.olho');
+btn.addEventListener('click', function() {
+
+    let input = document.querySelector('#input-senha');
+
+    if(input.getAttribute('type') == 'password') {
+        input.setAttribute('type', 'text');
+    } else {
+        input.setAttribute('type', 'password');
+    }
+    
+});
+
 const login = async () => {
 
     const email = document.getElementById('input-email').value;
@@ -34,6 +47,7 @@ const login = async () => {
         return;
     }
 
+    msg.style.display = 'block';
     msg.innerText = `E-mail ou senha incorretos, favor tente novamente.`
 }
 
