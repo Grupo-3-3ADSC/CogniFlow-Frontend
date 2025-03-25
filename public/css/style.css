@@ -20,7 +20,12 @@ body {
   }
 
   .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
+    height: 100vh;
+    position: relative;width: 100vw;
     height: 100vh;
     
     
@@ -46,6 +51,11 @@ body {
     align-items: center;
     border-radius: 20px 0px 0px 20px;
     left: 426px;
+
+    h1{
+        font-size: 48px;
+        color:white;    
+    }
   }
 
   .box-campos{
@@ -63,8 +73,10 @@ body {
     border-radius: 0px 20px 20px 0px;
     right: 450px;
     input{
-        border: none;
-        text-align: center;
+      padding: 12px;
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid #ccc;
     }
 
     h1{
@@ -79,7 +91,9 @@ body {
         margin-bottom: 30px;
     }
 
-    
+    #botao-confirmar{
+      font-weight: bold;
+    }
 
     button{
         background-color: var(--secondary-color);
